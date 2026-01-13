@@ -1,4 +1,4 @@
-# Day 03 — PySpark Transformations Deep Dive (11/01/26)
+# Day 03 — PySpark Transformations Deep Dive
 
 ## Focus
 - PySpark vs Pandas (when to use each)
