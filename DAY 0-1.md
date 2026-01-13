@@ -8,24 +8,24 @@ Goal: Set up Databricks and load the **E-Commerce Behavior Data** dataset from K
 
 ### Account & Workspace
 - [x] Created a Databricks Community Edition account
-- [ ] Verified email and logged in
-- [ ] Created and started a cluster (default settings are fine)
-- [ ] Enabled auto-termination (recommended)
+- [x] Verified email and logged in
+- [x] Created and started a cluster (default settings are fine)
+- [x] Enabled auto-termination (recommended)
 
 ### Kaggle Access
-- [ ] Logged into Kaggle and generated an API Token (`kaggle.json`)
-- [ ] Saved my Kaggle `username` and `key`
+- [x] Logged into Kaggle and generated an API Token (`kaggle.json`)
+- [x] Saved my Kaggle `username` and `key`
 
 ### Data Download & Storage
-- [ ] Installed Kaggle CLI inside Databricks
-- [ ] Configured Kaggle credentials
-- [ ] Downloaded the dataset zip
-- [ ] Extracted `2019-Oct.csv` and `2019-Nov.csv`
-- [ ] Deleted the zip to save space
+- [x] Installed Kaggle CLI inside Databricks
+- [x] Configured Kaggle credentials
+- [x] Downloaded the dataset zip
+- [x] Extracted `2019-Oct.csv` and `2019-Nov.csv`
+- [x] Deleted the zip to save space
 
 ### Data Validation
-- [ ] Loaded `2019-Oct.csv` into a Spark DataFrame
-- [ ] Loaded `2019-Nov.csv` into a Spark DataFrame
-- [ ] Verified row counts
-- [ ] Verified schema has **9 columns**
-- [ ] Displayed a sample of 5 rows
+- [x] Loaded `2019-Oct.csv` into a Spark DataFrame
+- [x] Loaded `2019-Nov.csv` into a Spark DataFrame
+- [x] Verified row counts
+- [x] Verified schema has **9 columns**
+- [x] Displayed a sample of 5 rows
