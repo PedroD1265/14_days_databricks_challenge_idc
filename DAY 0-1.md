@@ -7,7 +7,7 @@ Goal: Set up Databricks and load the **E-Commerce Behavior Data** dataset from K
 ## ✅ Day 0 Checklist
 
 ### Account & Workspace
-- [ ] Created a Databricks Community Edition account
+- [/] Created a Databricks Community Edition account
 - [ ] Verified email and logged in
 - [ ] Created and started a cluster (default settings are fine)
 - [ ] Enabled auto-termination (recommended)
