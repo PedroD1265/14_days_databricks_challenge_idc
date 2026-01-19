@@ -1,4 +1,4 @@
-# Day 06 — Medallion Architecture (14/01/26)
+# Day 06 — Medallion Architecture
 
 ## Focus
 - Bronze (raw) → Silver (cleaned) → Gold (aggregated)
