@@ -1,0 +1,15 @@
+CREATE OR REPLACE TABLE ecommerce.gold.category_funnel AS
+SELECT
+  category_code,
+  COUNT(*) FILTER (WHERE event_type = 'view')     AS views,
+  COUNT(*) FILTER (WHERE event_type = 'purchase') AS purchases,
+  ROUND(
+    COUNT(*) FILTER (WHERE event_type = 'purchase') * 100.0
+    / NULLIF(COUNT(*) FILTER (WHERE event_type = 'view'), 0),
+  2) AS conversion_rate
+FROM ecommerce.silver.events
+WHERE category_code IS NOT NULL
+GROUP BY category_code;
+
+SELECT * FROM ecommerce.gold.category_funnel;
+
