@@ -1,0 +1,9 @@
+SELECT
+  CASE WHEN cnt >= 10 THEN 'VIP'
+       WHEN cnt >= 5 THEN 'Loyal'
+       ELSE 'Regular' END as tier,
+  COUNT(*) as customers,
+  AVG(total_spent) as avg_ltv
+FROM (SELECT user_id, COUNT(*) cnt, SUM(price) total_spent
+      FROM ecommerce.silver.events WHERE event_type='purchase' GROUP BY user_id)
+GROUP BY tier;
