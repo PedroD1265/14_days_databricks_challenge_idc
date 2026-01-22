@@ -1,0 +1,20 @@
+WITH daily AS (
+  SELECT
+    event_date,
+    ROUND(SUM(price), 2) AS revenue
+  FROM ecommerce.silver.events
+  WHERE event_type = 'purchase'
+  GROUP BY event_date
+)
+
+SELECT
+  event_date,
+  revenue,
+  ROUND(
+    AVG(revenue) OVER (
+      ORDER BY event_date
+      ROWS BETWEEN 6 PRECEDING AND CURRENT ROW
+    ), 2
+  ) AS ma7
+FROM daily
+ORDER BY event_date;
